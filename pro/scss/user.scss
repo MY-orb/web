@@ -1,0 +1,126 @@
+@import "main.scss";
+#usercontent{
+    width: 100%;
+    overflow: auto;
+    background-color: #f6f6f6;
+    height: 100%;
+    &::-webkit-scrollbar {display:none;}
+    .User{
+        overflow:hidden; ;
+        @include flexBox;
+        @include flex-direction("row");
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        background-color:#FEEAEE;
+        .my{
+            width: 50px;
+            height:50px;
+            border-radius:50% 50%;
+            background-color: #eee;
+            margin-left: 10%;
+        }
+        span:nth-of-type(1){
+            margin-left: 5%;
+        }
+    }
+    .myorder{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        font-size: 12px;
+        text-indent: 20px;
+    }
+    .myshop{
+        background-color: #fff;
+        width: 100%;
+        height: 80px;
+        font-size: 12px;
+        @include flexBox;
+        @include flex-direction("row");
+        align-items: center;
+
+        span{
+            display: block;
+            flex:1;
+            text-align: center;
+            p:nth-of-type(1){
+                font-size: 18px;
+                color: #FFB2CC;
+            }
+            p:nth-of-type(2){
+                margin-top: 10px;
+            }
+        }
+
+    }
+    .myadess{
+        margin-top: 10px;
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        text-indent: 30px;
+        i{
+            font-size:20px;
+            color: #FFDBE7;
+        }
+    }
+    .myflowerfan{
+        margin-top: 10px;
+        background-color: #fff;
+        width: 100%;
+        height: 100px;
+        font-size: 14px;
+        text-indent: 30px;
+        p{
+            line-height: 50px;
+            i{
+                font-size:20px;
+                color: #FFDBE7;
+            }
+        }
+        p:nth-of-type(1){
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    .mycause{
+        margin-top: 10px;
+        background-color: #fff;
+        width: 100%;
+        height: 100px;
+        font-size: 14px;
+        text-indent: 30px;
+        p{
+            line-height: 50px;
+            i{
+                font-size:20px;
+            }
+        }
+        p:nth-of-type(1){
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    .opinion{
+        margin-top: 10px;
+        width: 100%;
+        height: 150px;
+        font-size: 14px;
+        text-indent: 30px;
+        background-color: #fff;
+        p{
+            line-height: 50px;
+            border-bottom: 1px solid #ddd;
+            i{
+                font-size:20px;
+            }
+        }
+        p:nth-of-type(3){
+            border-bottom:0;
+        }
+
+    }               
+}

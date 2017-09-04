@@ -1,0 +1,58 @@
+http://w.lefeng.com/api/neptune/special_brands/v3?page=1&labelType=1
+
+http://w.lefeng.com/api/neptune/search/hot_keywords/v1?coun
+
+http://w.lefeng.com/api/neptune/handpick_list/v1?start=1 
+
+http://w.lefeng.com/api/neptune/search/suggestion/v1?keyword=n&count=15
+
+var res728 = data.data['728']
+,
+proList728 : res728
+
+var data728 = this.state.proList728;
+var Arry728 = [];
+var Arry7281=[];
+var Arry7282=[];
+
+for(i=0;i<data728.length;i++){
+	if(i<=4){Arry728.push(<div key={i} ><img  src={data728[i].imgFullPath} /></div>)}
+	if(i>4 && i<=9){Arry7281.push(<div key={i}><img key={i}  src={data728[i].imgFullPath} /></div>)}
+	if(i>9 && i<=14){Arry7282.push(<div key={i}><img key={i}  src={data728[i].imgFullPath} /></div>)}
+}
+
+<div className="swiper-container" id="goodsli">
+		<div className="swiper-wrapper" onClick = {this.toKindFn.bind(this)}> 
+			<div className="swiper-slide">{Arry728}</div>
+			<div className="swiper-slide">{Arry7281}</div>
+			<div className="swiper-slide">{Arry7282}</div>
+		</div>
+		
+</div>
+
+<li>
+	<img src="">
+	<h1></h1>
+	<h2></h2>
+	<span><i className="iconfont"></i></span>
+	<span></span>
+	<i></i>
+</li>
+
+http://w.lefeng.com/api/neptune/search/search_by_keyword/v1?keyword='+wo&page++
+
+http://w.lefeng.com/api/neptune/goods/detail_with_stock/v1?needBrandInfo=true&gid=220757454&brandId=800043339
+for(var i in data){
+			Array.push(<div className="datailsList">
+				<img src={data[i].goods.verticalImage} />
+				<p>{data[i].goods.name}<i className="iconfont">1</i></p>
+				<span>￥{data[i].goods.vipshopPrice}</span>
+				<span>￥{data[i].goods.marketPrice}</span>
+			</div>)	
+		}
+
+排序
+http://w.lefeng.com/api/neptune/search/search_by_keyword/v1?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85&sort=%7B%22sale%22%3A%2
+
+Request URL:http://w.lefeng.com/api/neptune/search/search_by_keyword/v1?keyword=%E9%9D%A2%E8%86%9C%E6%8A%A4%E8%82%A4
+&sort=%7B%22vipshopPrice%22%3A%22asc%22%7D

@@ -1,0 +1,22 @@
+@import "main.scss";
+.commonheader{
+    @include flexBox;
+    @include flex-direction("row");
+    height: 44px;
+    width: 100%;
+    box-shadow: 0 3px 3px rgba(6,6,6,.1);
+    border-bottom: 1px solid #eee;
+    i{
+        font-style: normal;
+        font-size: 26px;
+        color: #666;
+        width: 15%;
+        text-align: center;
+        line-height: 44px;
+    }
+    span{
+        width: 70%;
+        text-align: center;
+        line-height: 44px;
+    }
+}

@@ -1,0 +1,175 @@
+@import "main.scss";
+//more
+            .Moreheader{
+                @include flexBox;
+                @include flex-direction("row");
+                height: 45px;
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+                box-shadow: 0 4px 6px rgba(0,0,0,.2);
+                background-image: linear-gradient(180deg,#fcfdfe,#f8f9fa);
+                input{
+                    height: 27px;
+                    width: 60%;
+                    display: block;
+                    border: 1px solid #999;
+                    margin-top: 8px;
+                    line-height: 28px;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                    background: #fff;
+                    font-size: 12px;
+                    color: #999;
+                }
+                b{
+                    font-weight: 100;
+                    text-align: center;
+                    margin-top: 8px;
+                    line-height: 28px;
+                    font-style: normal;
+                    font-size: 16px;
+                    width: 15%;
+                    height: 27px;
+                    border: 1px solid #E83068;
+                    margin-left: 10px;
+                    color: #E83068;
+                    border-radius:3px 3px ;
+                }
+                i{
+                    font-style: normal;
+                    font-size: 26px;
+                    color: #666;
+                    width: 15%;
+                    text-align: center;
+                    line-height: 44px;
+                }
+                
+            }
+            .Morecontent{
+                box-sizing:border-box;
+                padding: 20px;
+                width:100%;
+                overflow: auto;
+                height: 100%;
+                background-color: #f6f6f6;
+                .disp{
+                    width: 100%;
+                    h1{
+                    font-size: 14px;
+                        i{
+                            color:#aaa;
+                        }
+                    }
+                    .commoditylist{
+                        @include flexBox;
+                        flex-wrap:wrap;
+                        height:120%;
+                        width:100%;
+                        span{
+                            padding: 0px 8px;
+                            margin:8px 4px;
+                            font-size: 12px;
+                            text-align: center;
+                            line-height: 22px;
+                            height: 22px;
+                            display: block;
+                            border:1px solid #aaa;
+                            color:#aaa;
+                            border-radius: 5px 5px;
+                        }
+                        .c1{
+                            border:1px solid #E83068;
+                            color:#E83068; 
+                        }
+                    }
+                }
+                
+                .search{
+                    color: #333;
+                    width: 100%;
+                    height: 100%;
+                    li{
+                        margin-top:20px;
+                        border-bottom:1px solid #eee; 
+                    }
+                }
+            }
+            .Listcontent{
+                box-sizing:border-box;
+                width:100%;
+                height: 100%;
+                overflow: auto;
+                .Listtitle{
+                    overflow: hidden;
+                    font-size: 12px;
+                    width: 100%;
+                    height:40px;
+                    border-bottom:1px solid #ddd; 
+                    @include flexBox;
+                    @include flex-direction("row");
+                    p{
+                        text-align: center;
+                        line-height:40px ;
+                        display: block;
+                        width: 33%;
+                        height: 50px;
+                        border-right:1px solid #ddd; 
+                    }
+                    p:nth-of-type(3){
+                        border: 0;
+                    }
+                }
+                .details{
+                    width: 100%;
+                    li{
+                        @include flexBox;
+                        @include flex-direction("row");
+                        box-sizing:border-box;
+                        padding: 8px;
+                        width: 100%;
+                        height:195px;
+                        border-bottom:1px solid #ddd; 
+                        img{
+                            width: 140px;
+                            height: 175px;
+                        }
+                        .List-right{
+                            font-size: 12px;
+                            margin-top: 20px;
+                            line-height:30px;
+                            height: 130px;
+                            width: 196px;
+                            h2{
+                                color: #555;
+                                font-weight: 100;
+                            }
+                            div:nth-of-type(1){
+                                color: #999;
+                                span{
+                                    font-size: 14px;
+                                    margin-left: 10px;
+                                }
+                            }
+                            div:nth-of-type(2){
+                                span:nth-of-type(1){
+                                    font-size: 22px;
+                                    color: #000;
+                                    font-weight: 600;
+                                }
+                                span:nth-of-type(2){
+                                   margin-left: 20px;
+                                   color: #999;
+                                   text-decoration: line-through;
+                                }
+                                i{
+                                    margin-left: 80px;
+                                    color: #FF9ABB;
+                                    font-size: 22px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
